@@ -1,55 +1,29 @@
 ---
 name: woia-re-property-acquisition
-description: Real Estate service-scoped delta over Supply Acquisition with source-backed authorization and receiver-owned transfer.
+description: Specialize Supply Acquisition for scoped sale, rental-placement and existing-Lease administration; narrow accepted source/authority and receiver transfer without executing effects.
 license: MIT
 ---
 
-# woia-re-property-acquisition
+# Property Acquisition delta
 
-## Operating flow
+Use this delta only with the exact published generic base and Core bindings in [release-bindings.json](references/release-bindings.json). One selected specialized root; never run the generic base as a second root. The pair remains NOT_QUALIFIED and cannot activate before final delta release plus exact immutable pair evaluations.
 
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
+## DISCOVER
 
-## Purpose
+Resolve the host's accepted source map, current action policy, actor/organization authority, Property/unit and represented principal. Select only explicitly requested service scopes: sale, rental placement, existing-Lease administration. Read accepted shared data/Knowledge directly. Load [acquisition-contract.md](references/acquisition-contract.md) for authority, service readiness, transfer, changes or recovery; its safety contract always applies.
 
-Specialize only the five accepted acquisition coordination slots for sale, rental placement and existing-Lease administration.
+## DECIDE
 
-## Minimum sufficient evidence
+Apply the five ADR-0008 rules and only the ADD/SPECIALIZE/NARROW operations in [delta-contract.json](references/delta-contract.json). Missing/disputed Mandate blocks dependent actions, not independently authorized preparation. Administration requires existing active Lease/source context, never fictional tenant search, Listing or photos. Negotiation, Offers and competent substantive acceptance remain human-owned.
 
-Use a bounded path when an authoritative existing artifact/evidence set is healthy and the requested change is local and understood:
+## IMPLEMENT
 
-1. identify the artifact/evidence, source candidate, and affected surface;
-2. load only supporting context and references needed for that surface;
-3. amend or re-evaluate the smallest coherent unit;
-4. verify affected behavior plus mandatory cross-cutting invariants;
-5. preserve unrelated valid artifacts/evidence and report what changed.
+Coordinate references and distinct contributions through existing Core request/response contracts, preserving receiver-owned Tasks. Customer Service owns external-person communication/scheduling, Finance financial acceptance, Legal competent legal controls, Operations field evidence, Data genuine source governance. RE Property Data owns Property/Mandate/Listing writes. Do not dispatch contact, publication, payment or domain writes from this delta. No copied base method, Core runtime or readiness database.
 
-Use the deep path for a new artifact, unclear scope or contradictory evidence, public API/event/schema changes, persisted data/migrations, authentication/authorization/secrets/signing/trust boundaries, deployment/rollback/availability risk, cross-provider dependency restructuring, unhealthy or unfamiliar conventions, missing durable required evidence, or a failed invariant that invalidates reused evidence. Load the references/checklists needed by those triggers and retain all required safety validation.
+## VALIDATE
 
-## Discover
+The pure [evaluate-acquisition.mjs](scripts/evaluate-acquisition.mjs) evaluates one service/action using independently host-resolved context and the actual exact base helper's bound result. It does not authenticate arbitrary caller claims or enforce a live store. Validate [request schema](references/acquisition-request.schema.json), source/version/current interval/holds/emergency, exact scoped competent grant, distinct accepted receiver results and exact transfer payload acceptance. ACK/notification is not acceptance. UNKNOWN retains the original key and requires reconciliation before retry. Material change re-evaluates active intake; frozen snapshots and historical evidence remain unchanged.
 
-Inspect actual repository/system state before changing it. Locate authoritative artifacts/evidence and identify affected standards, constraints, supported platforms, integrations, and user requirements. Expand context when a dependency, uncertainty, or deep-path trigger requires it.
+## REPORT
 
-## Decide
-
-Select the smallest strategy that satisfies the capability. Preserve healthy existing standards. Do not infer policy from the author's workspace.
-
-## Implement
-
-Apply only authorized changes. Keep domain semantics independent from unrelated tooling.
-
-## Validate
-
-Run capability-appropriate checks and verify changed state. Reuse evidence only when it is durable, inspectable evidence of actual execution/observation with an identifiable candidate, checked surface, relevant inputs/environment, and outcome. Independently establish that it satisfies the gate being owned; prose claims or recollection are not execution evidence.
-
-A later mutation invalidates the checks whose coverage or inputs it affects. Rerun those checks and mandatory related invariants; preserve unaffected valid evidence. Reuse expensive runtime verification across an unchanged candidate and relevant environment. A new turn/session alone does not invalidate evidence. Execute or observe relevant checks when required evidence cannot be inspected or established. Skipped/unavailable checks are not PASS.
-
-## Report
-
-Report current state, source candidate, affected surface, decisions, changes, and exact usage/maintenance commands. Distinguish reusable evidence, invalidated evidence, freshly established evidence, and assumptions/inferences that are not evidence. Include remaining risks and uncertainties.
-
-## Detailed references
-
-Add focused files under `references/` only when more detail is needed and give each reference a concrete scope/risk/ambiguity load trigger. Load triggered safety references; a bounded amendment does not require every reference or full template replay. Add scripts/assets only when they materially improve deterministic execution.
+Report the precise subject/service/action, accepted source refs, blockers, retained or accepted receiver owner and next Due Work review. Contribution completion is not parent completion; accepted transfer ends Acquisition ownership of that downstream scope. No pair qualification, Operator E2E or Production Ready claim is made by engineering evaluation. W5 admission/distribution remain later gates.

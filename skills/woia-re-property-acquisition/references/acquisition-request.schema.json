@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "dev.woia.property-acquisition-evaluation-request/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_ref", "organization_ref", "actor_ref", "property_ref", "unit_ref", "principal_ref", "purpose", "scope_version", "service", "services", "mode", "next_action", "source_map_revision", "idempotency_key", "snapshot_ref"],
+  "properties": {
+    "task_ref": {"type": "string", "minLength": 1},
+    "organization_ref": {"type": "string", "minLength": 1},
+    "actor_ref": {"type": "string", "minLength": 1},
+    "property_ref": {"type": "string", "minLength": 1},
+    "unit_ref": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]},
+    "principal_ref": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string", "minLength": 1},
+    "scope_version": {"type": "string", "minLength": 1},
+    "service": {"enum": ["sale", "rental-placement", "existing-lease-administration"]},
+    "services": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": {"enum": ["sale", "rental-placement", "existing-lease-administration"]}},
+    "mode": {"enum": ["prepare", "next-action", "transfer"]},
+    "next_action": {"type": "string", "minLength": 1},
+    "source_map_revision": {"type": "string", "minLength": 1},
+    "idempotency_key": {"type": "string", "minLength": 1},
+    "snapshot_ref": {"type": "string", "minLength": 1}
+  }
+}

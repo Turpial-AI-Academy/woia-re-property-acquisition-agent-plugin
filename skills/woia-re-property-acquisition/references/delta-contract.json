@@ -1,0 +1,132 @@
+{
+  "schema": "dev.woia.property-acquisition-delta/v1",
+  "id": "property-acquisition-real-estate",
+  "core": {
+    "plugin": "woia-core",
+    "repository": "Turpial-AI-Academy/woia-core-agent-plugin",
+    "version": "0.5.3",
+    "ref": "v0.5.3",
+    "commit": "7a05b942bc244b385ea1403ed5dc975fdae22e24",
+    "tree": "f18ebe8268478aea7551713fafbbf90a3e54b0cc"
+  },
+  "base": {
+    "plugin": "woia-supply-acquisition",
+    "repository": "Turpial-AI-Academy/woia-supply-acquisition-agent-plugin",
+    "version": "0.5.0",
+    "ref": "v0.5.0",
+    "commit": "cc887a54a956e481e844f466c9111a3a6209b32e",
+    "tree": "862901c621e0d1673c2941bf3cc39a778db465f3"
+  },
+  "providers": [
+    {
+      "plugin": "woia-identity",
+      "repository": "Turpial-AI-Academy/woia-identity-agent-plugin",
+      "version": "0.5.0",
+      "ref": "v0.5.0",
+      "commit": "50c67c0be6d83412a613558ca4e7db026814a422",
+      "tree": "03a73e3c8b1970e42faf70a8cfc404a05a3ddac6"
+    },
+    {
+      "plugin": "woia-communications",
+      "repository": "Turpial-AI-Academy/woia-communications-agent-plugin",
+      "version": "0.5.0",
+      "ref": "v0.5.0",
+      "commit": "daebb060e46c61da3d7db12f0bc6527287bcf199",
+      "tree": "b4d5d7504980ee7f691f0b11b6e59310bf74ba4b"
+    },
+    {
+      "plugin": "woia-documents",
+      "repository": "Turpial-AI-Academy/woia-documents-agent-plugin",
+      "version": "0.5.0",
+      "ref": "v0.5.0",
+      "commit": "c0c6e5af25dbdfdb81349e25b681ee79823e1854",
+      "tree": "441ebdd9e84b611ab9f9d009e6fbdaf1b971fe93"
+    },
+    {
+      "plugin": "woia-organization-knowledge",
+      "repository": "Turpial-AI-Academy/woia-organization-knowledge-agent-plugin",
+      "version": "0.5.0",
+      "ref": "v0.5.0",
+      "commit": "0dcec81ac84428d5e526089593179a7a92ef5357",
+      "tree": "c4d3523c2c88eac05958fb52b6b37b71e72ca499"
+    },
+    {
+      "plugin": "woia-sales-lead-qualification",
+      "repository": "Turpial-AI-Academy/woia-sales-lead-qualification-agent-plugin",
+      "version": "0.5.1",
+      "ref": "v0.5.1",
+      "commit": "cd5b3f4c37c88e71274ba526b5cc8b00f76e6c69",
+      "tree": "80d29cefc6fb3428f830889d50add285267d05da"
+    },
+    {
+      "plugin": "woia-sales-pipeline",
+      "repository": "Turpial-AI-Academy/woia-sales-pipeline-agent-plugin",
+      "version": "0.5.1",
+      "ref": "v0.5.1",
+      "commit": "f8a0e79ad6a096a3926eaa4bbd1a4720a8aabb94",
+      "tree": "45d1bda8d5b754ea39a2ebd191e08e98af2db313"
+    },
+    {
+      "plugin": "woia-re-domain-contracts",
+      "repository": "Turpial-AI-Academy/woia-re-domain-contracts-agent-plugin",
+      "version": "0.5.0",
+      "ref": "v0.5.0",
+      "commit": "fb1c8a3f7fb116f2a00daf05ae335fdfbc7c3f3f",
+      "tree": "f3ff5a68a0d5df2e615a650eddc313c9585b7f08"
+    },
+    {
+      "plugin": "woia-re-property-data",
+      "repository": "Turpial-AI-Academy/woia-re-property-data-agent-plugin",
+      "version": "0.5.0",
+      "ref": "v0.5.0",
+      "commit": "f618daa0c2cfbef9b9be97441ad31070c46e7ee0",
+      "tree": "e8068c8f719a54ffa9dc9c50d271a9824d1f1ec7"
+    }
+  ],
+  "base_range": {
+    "min_inclusive": "0.5.0",
+    "max_exclusive": "0.6.0"
+  },
+  "exported_slots": [
+    "service-intake",
+    "representation-authorization",
+    "readiness-evaluation",
+    "receiver-contribution",
+    "outcome-continuity"
+  ],
+  "operations": [
+    {
+      "operation": "SPECIALIZE",
+      "slot": "service-intake"
+    },
+    {
+      "operation": "NARROW",
+      "slot": "representation-authorization"
+    },
+    {
+      "operation": "SPECIALIZE",
+      "slot": "readiness-evaluation"
+    },
+    {
+      "operation": "NARROW",
+      "slot": "receiver-contribution"
+    },
+    {
+      "operation": "ADD",
+      "slot": "outcome-continuity"
+    }
+  ],
+  "inherited_gates": [
+    "base-conformance",
+    "authority-narrowing",
+    "provider-closure",
+    "update-recovery"
+  ],
+  "additional_gates": [
+    "delta-semantics"
+  ],
+  "expected_active_roots": 1,
+  "selected_root": "woia-re-property-acquisition",
+  "status": "NOT_QUALIFIED",
+  "evaluated_pairs": []
+}

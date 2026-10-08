@@ -1,0 +1,17 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import Ajv from 'ajv';
+import { readFileSync } from 'node:fs';
+import { fixture } from './acquisition-fixture.mjs';
+const schema = JSON.parse(readFileSync(new URL('../skills/woia-re-property-acquisition/references/acquisition-request.schema.json', import.meta.url)));
+const validate = new Ajv({ allErrors: true, strict: true }).compile(schema);
+test('public request schema validates each distinct route and mode', () => { for (const service of ['sale', 'rental-placement', 'existing-lease-administration']) for (const mode of ['prepare', 'next-action', 'transfer']) assert.equal(validate(fixture(service, mode).request), true, JSON.stringify(validate.errors)); });
+for (const key of schema.required) test(`schema rejects missing ${key}`, () => { const f = fixture(); delete f.request[key]; assert.equal(validate(f.request), false); });
+test('schema rejects fabricated business authority field', () => { const f = fixture(); f.request.authority_granted = true; assert.equal(validate(f.request), false); });
+test('schema rejects implicit all-services and duplicate scopes', () => { const f = fixture(); f.request.service = 'all'; assert.equal(validate(f.request), false); f.request.service = 'sale'; f.request.services = ['sale', 'sale']; assert.equal(validate(f.request), false); });
+const contract = JSON.parse(readFileSync(new URL('../skills/woia-re-property-acquisition/references/delta-contract.json', import.meta.url)));
+const contractSchema = JSON.parse(readFileSync(new URL('../skills/woia-re-property-acquisition/references/delta-contract.schema.json', import.meta.url)));
+const validateContract = new Ajv({ allErrors: true, strict: true }).compile(contractSchema);
+test('delta composition schema validates exact pre-release declaration', () => { assert.equal(validateContract(contract), true, JSON.stringify(validateContract.errors)); });
+for (const [name, mutate] of Object.entries({ 'qualification claim': c => c.status = 'QUALIFIED', 'floating commit': c => c.base.commit = 'main', 'missing closure': c => c.providers.pop(), 'new Core engine': c => c.runtime_engine = {}, 'fake passed pair': c => c.evaluated_pairs.push({ result: 'PASS' }) })) test(`composition schema rejects ${name}`, () => { const c = structuredClone(contract); mutate(c); assert.equal(validateContract(c), false); });
+test('thin delta manifest preserves identity/version and precisely two hard dependencies', () => { const manifest = JSON.parse(readFileSync(new URL('../dev.woia/manifest.json', import.meta.url))); const plugin = JSON.parse(readFileSync(new URL('../plugin.json', import.meta.url))); assert.equal(manifest.kind, 'department-orchestrator-delta'); assert.equal(manifest.version, plugin.version); assert.equal(manifest.authoring_profile, 'thin'); assert.deepEqual(manifest.requires_plugins.map(x => x.name), ['woia-core', 'woia-supply-acquisition']); assert.equal(manifest.core_release.commit, contract.core.commit); assert.equal(manifest.base_release.commit, contract.base.commit); assert.deepEqual(manifest.evaluated_pairs, []); });

@@ -1,29 +1,9 @@
-# Validation obligations
+# Validation
 
-The scaffold supplies generic package/release validation and regression fixtures. Add domain-specific tests and regressions.
+Run canonical mise tasks with Node 24.21.0/pnpm 11.19.0: bootstrap, doctor, validate, test, ci:fast, then release:check on a committed clean candidate. Schema tests use locked maintenance AJV; the portable helper needs only Node built-ins.
 
-Capability regressions should prove bounded amendments of healthy authoritative artifacts, deep-path escalation, preservation of unrelated valid artifacts/evidence, targeted invalidation/revalidation, and independent gate ownership. Assert semantic obligations or observable behavior rather than rigid prose sentences unless exact wording is the contract. Adapt these cases to the capability; do not embed provider-specific policy in generic package validation.
+Domain regression covers the three independent service routes, permitted preparation without Mandate, dependent accepted authority/source evidence, exact source intervals/holds/emergency stop, distinct receiver results, transfer payload binding, UNKNOWN/key retention, pinned snapshots, material-change reevaluation and ADD/SPECIALIZE/NARROW conformance. Tests do not stand in for live provider/store qualification. Existing generic base evaluateIntake is used by the host, never copied.
 
-Report reusable durable execution/observation evidence, invalidated evidence, freshly established evidence, and assumptions/inferences that are not evidence. Independently inspect reused evidence and rerun affected checks plus mandatory invariants when changes invalidate it. This refinement does not reduce the formal gates below.
+Ecosystem v0.5.4 plugin:certify-thin checks clean candidate, official manifest/skills, payload safety, portable archive and discovered domain regression. Canonical LICENSE must match the published Ecosystem standard. Clean-Linux container parity is applicable when maintenance portability changes; this delta preserves Factory maintenance tooling, so ci:extended/jobs:local are NOT_RUN, not falsely PASS.
 
-Before first release:
-
-~~~text
-# after README.plugin.md -> README.md and placeholder replacement
-mise install
-mise run bootstrap
-# optional source diagnostic; not a release gate
-pnpm run checksums:generate
-mise run doctor
-mise run validate
-mise run test
-mise run ci:fast
-mise run ci:extended
-mise run jobs:local
-# commit candidate
-mise run release:check
-~~~
-
-Also run `skills-ref validate` for each skill when available.
-
-No placeholder token or scaffold-only `README.plugin.md` may remain in the release candidate.
+Engineering composition evidence is PRE_RELEASE only: NOT_QUALIFIED, evaluated_pairs=[], activation denied. No tag/Release/admission, Operator E2E or Production Ready claim.

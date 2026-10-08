@@ -1,0 +1,40 @@
+{
+  "schema": "dev.woia.department-orchestrator/v1",
+  "version": "0.5.0",
+  "authoring_profile": "thin",
+  "kind": "department-orchestrator-delta",
+  "department": "supply-acquisition",
+  "execution_model": "core-task-property-acquisition-delta",
+  "requires_plugins": [
+    {
+      "name": "woia-core",
+      "minimum_version": "0.5.3"
+    },
+    {
+      "minimum_version": "0.5.0",
+      "maximum_version_exclusive": "0.6.0",
+      "name": "woia-supply-acquisition"
+    }
+  ],
+  "core_release": {
+    "plugin": "woia-core",
+    "repository": "Turpial-AI-Academy/woia-core-agent-plugin",
+    "version": "0.5.3",
+    "ref": "v0.5.3",
+    "commit": "7a05b942bc244b385ea1403ed5dc975fdae22e24",
+    "tree": "f18ebe8268478aea7551713fafbbf90a3e54b0cc"
+  },
+  "base_release": {
+    "plugin": "woia-supply-acquisition",
+    "repository": "Turpial-AI-Academy/woia-supply-acquisition-agent-plugin",
+    "version": "0.5.0",
+    "ref": "v0.5.0",
+    "commit": "cc887a54a956e481e844f466c9111a3a6209b32e",
+    "tree": "862901c621e0d1673c2941bf3cc39a778db465f3"
+  },
+  "contracts_directory": "skills/woia-re-property-acquisition/references",
+  "delta_contract": "skills/woia-re-property-acquisition/references/delta-contract.json",
+  "provider_closure": "skills/woia-re-property-acquisition/references/release-bindings.json",
+  "qualification_status": "NOT_QUALIFIED",
+  "evaluated_pairs": []
+}

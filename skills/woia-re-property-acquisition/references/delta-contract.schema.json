@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "dev.woia.property-acquisition-delta-contract/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "id", "core", "base", "providers", "base_range", "exported_slots", "operations", "inherited_gates", "additional_gates", "expected_active_roots", "selected_root", "status", "evaluated_pairs"],
+  "properties": {
+    "schema": {"const": "dev.woia.property-acquisition-delta/v1"},
+    "id": {"const": "property-acquisition-real-estate"},
+    "core": {"$ref": "#/definitions/release"},
+    "base": {"$ref": "#/definitions/release"},
+    "providers": {"type": "array", "minItems": 8, "maxItems": 8, "uniqueItems": true, "items": {"$ref": "#/definitions/release"}},
+    "base_range": {"type": "object", "additionalProperties": false, "required": ["min_inclusive", "max_exclusive"], "properties": {"min_inclusive": {"const": "0.5.0"}, "max_exclusive": {"const": "0.6.0"}}},
+    "exported_slots": {"const": ["service-intake", "representation-authorization", "readiness-evaluation", "receiver-contribution", "outcome-continuity"]},
+    "operations": {"type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true, "items": {"type": "object", "additionalProperties": false, "required": ["slot", "operation"], "properties": {"slot": {"enum": ["service-intake", "representation-authorization", "readiness-evaluation", "receiver-contribution", "outcome-continuity"]}, "operation": {"enum": ["ADD", "SPECIALIZE", "NARROW"]}}}},
+    "inherited_gates": {"const": ["base-conformance", "authority-narrowing", "provider-closure", "update-recovery"]},
+    "additional_gates": {"const": ["delta-semantics"]},
+    "expected_active_roots": {"const": 1},
+    "selected_root": {"const": "woia-re-property-acquisition"},
+    "status": {"const": "NOT_QUALIFIED"},
+    "evaluated_pairs": {"type": "array", "maxItems": 0}
+  },
+  "definitions": {
+    "release": {"type": "object", "additionalProperties": false, "required": ["plugin", "repository", "version", "ref", "commit", "tree"], "properties": {"plugin": {"type": "string", "minLength": 1}, "repository": {"type": "string", "pattern": "^Turpial-AI-Academy/woia-[a-z-]+-agent-plugin$"}, "version": {"type": "string", "pattern": "^0\\.5\\.[0-9]+$"}, "ref": {"type": "string", "pattern": "^v0\\.5\\.[0-9]+$"}, "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"}, "tree": {"type": "string", "pattern": "^[a-f0-9]{40}$"}}}
+  }
+}

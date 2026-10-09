@@ -1,6 +1,6 @@
 # WOIA RE Property Acquisition v0.5.7
 
-A thin department-orchestrator delta over published Supply Acquisition v0.5.7 and Core v0.5.7. It adds only ADR-0008's five Real Estate coordination rules for independent sale, rental-placement and existing-Lease administration scopes.
+A thin department-orchestrator delta over published Supply Acquisition v0.5.7 and Core v0.5.7. It adds only five Real Estate coordination rules for independent sale, rental-placement and existing-Lease administration scopes.
 
 ## Contract and ownership
 

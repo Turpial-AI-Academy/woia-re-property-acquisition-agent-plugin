@@ -14,7 +14,7 @@ Resolve the host's accepted source map, current action policy, actor/organizatio
 
 ## DECIDE
 
-Apply the five ADR-0008 rules and only the ADD/SPECIALIZE/NARROW operations in [delta-contract.json](references/delta-contract.json). Missing/disputed Mandate blocks dependent actions, not independently authorized preparation. Administration requires existing active Lease/source context, never fictional tenant search, Listing or photos. Negotiation, Offers and competent substantive acceptance remain human-owned.
+Apply the five acquisition rules and only the ADD/SPECIALIZE/NARROW operations in [delta-contract.json](references/delta-contract.json). Missing/disputed Mandate blocks dependent actions, not independently authorized preparation. Administration requires existing active Lease/source context, never fictional tenant search, Listing or photos. Negotiation, Offers and competent substantive acceptance remain human-owned.
 
 ## IMPLEMENT
 

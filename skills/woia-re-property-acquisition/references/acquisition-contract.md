@@ -1,4 +1,4 @@
-# Real Estate acquisition delta — ADR-0008
+# Real Estate acquisition delta
 
 ## Ownership and composition
 
@@ -29,5 +29,3 @@ Transfer requires a separately retrieved authoritative `transfer_acceptance`: cu
 All outputs retain dispatch_performed/fact_written/authority_granted/task_written/pair_qualified/production_ready false and parent_completed false. `NEXT_ACTION_ELIGIBLE` means this one read-only engineering evaluation has no blockers; it is not permission to execute an external effect, activate a root or complete a Task.
 
 ## Implementation provenance and later gates
-
-Canonical coordination: Turpial-AI-Academy/woia-real-estate 4a7af370c1d6fef6a6ddf809b01fee8da16c3a09, ADR-0008/docs21/22/23/24/25/26 and B5/B6/entry. Public fixtures are synthetic. No private organization policy, vendor, credentials, DBMS, fees or legal rules are selected. Operator E2E is NOT_RUN; Production Ready is false. registry/marketplace admission and published pair qualification are separate gates.

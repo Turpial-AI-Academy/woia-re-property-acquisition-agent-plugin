@@ -21,64 +21,64 @@
       "repository": "Turpial-AI-Academy/woia-identity-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "1fe673a736b5398d3b835652ed965395a45efccc",
-      "tree": "f8224b24467c9003db46a2aed24feadb182dd10d"
+      "commit": "8ad93549ba8236a8c738aef503c4bf290668094c",
+      "tree": "31bc3029d98701fd7311b5996a184611f67874e3"
     },
     {
       "plugin": "woia-communications",
       "repository": "Turpial-AI-Academy/woia-communications-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "f25581d612285d9f2ca24b01eef8ac450262b922",
-      "tree": "1d9567a3def19dfe35e377f64595f902f7789112"
+      "commit": "dd50174aa782f6b8235bb1f35f4e1331850f0fae",
+      "tree": "2aeef36779e5e27c988ccf820c7a68f94b5c8528"
     },
     {
       "plugin": "woia-documents",
       "repository": "Turpial-AI-Academy/woia-documents-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "f516f992fd63faadcc8f974438d4fe0998b04bd5",
-      "tree": "6c9799d537ef69d8860e644fa8be15c383511e2a"
+      "commit": "3f038ea86b45e1982b4bc378fc0b72a1e3395d6e",
+      "tree": "a4944bdea50e383b42c2a810fccf8beefa1ef1a6"
     },
     {
       "plugin": "woia-organization-knowledge",
       "repository": "Turpial-AI-Academy/woia-organization-knowledge-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "7f209c1418510eeda7ea99723b5d01974d47a474",
-      "tree": "13782d54c3e03022386b25062459bc3afbe9f702"
+      "commit": "547591284a6d8240926952c541873bea284d84e3",
+      "tree": "2e11d20ad2273a9473f3ca5fcda4cdbea2ccfb83"
     },
     {
       "plugin": "woia-sales-lead-qualification",
       "repository": "Turpial-AI-Academy/woia-sales-lead-qualification-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "91beeb4cbb983e616ff0707a0a31925852d4463a",
-      "tree": "0b79513d809a2cf315858c77f45727b6841a2f97"
+      "commit": "dd2e36cf3f91d587f60480425c232fb7e3c54d8a",
+      "tree": "4d429b68833d69d953fe0a97ed92c98b06effc39"
     },
     {
       "plugin": "woia-sales-pipeline",
       "repository": "Turpial-AI-Academy/woia-sales-pipeline-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "3022ee5bbf2ce6caacd3b0e741497d63de63f475",
-      "tree": "fc49d657851741b6bc5a463450e23e805f127ab2"
+      "commit": "c492a14acfb4e7121bbb402f5f10b427e873afae",
+      "tree": "607d267886480c88ac0dce8a496a54550388e253"
     },
     {
       "plugin": "woia-re-domain-contracts",
       "repository": "Turpial-AI-Academy/woia-re-domain-contracts-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "68686d625c6d5caf45042d23d81770f2a178c92d",
-      "tree": "18ca26a7fb8caaa245a91ac499845ae4fefa4eae"
+      "commit": "33af7010ad2e9a71aca576c27914619a3f9d7f34",
+      "tree": "639afce801dbd61153cd919a23c1e4f5de4612e4"
     },
     {
       "plugin": "woia-re-property-data",
       "repository": "Turpial-AI-Academy/woia-re-property-data-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "4c855802b5abe1794861088bfe727e44525216b6",
-      "tree": "4a128e57f3455fbf694a3bf4fb905de9397f152c"
+      "commit": "9b6803e0546f2e2ce79152de74177c25767882d7",
+      "tree": "dba6a1141c0606e13c02e9e8ce91d9490fd7b2a1"
     }
   ]
 }

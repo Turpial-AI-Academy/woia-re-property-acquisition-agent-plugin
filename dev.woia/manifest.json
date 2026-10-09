@@ -29,8 +29,8 @@
     "repository": "Turpial-AI-Academy/woia-supply-acquisition-agent-plugin",
     "version": "0.5.7",
     "ref": "v0.5.7",
-    "commit": "8cc54d80778de13ad5f3f70c55ad009bbae2b887",
-    "tree": "1e492fb9cfcf693ba94388913c57eab13729bdd0"
+    "commit": "c49ef3bfb96880c7af36996e919e09b1e7caeaa0",
+    "tree": "71d8376d25590be4e90011b5f1da3d1b66e46886"
   },
   "contracts_directory": "skills/woia-re-property-acquisition/references",
   "delta_contract": "skills/woia-re-property-acquisition/references/delta-contract.json",

@@ -14,8 +14,8 @@
     "repository": "Turpial-AI-Academy/woia-supply-acquisition-agent-plugin",
     "version": "0.5.7",
     "ref": "v0.5.7",
-    "commit": "8cc54d80778de13ad5f3f70c55ad009bbae2b887",
-    "tree": "1e492fb9cfcf693ba94388913c57eab13729bdd0"
+    "commit": "c49ef3bfb96880c7af36996e919e09b1e7caeaa0",
+    "tree": "71d8376d25590be4e90011b5f1da3d1b66e46886"
   },
   "providers": [
     {
@@ -39,8 +39,8 @@
       "repository": "Turpial-AI-Academy/woia-documents-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "3f038ea86b45e1982b4bc378fc0b72a1e3395d6e",
-      "tree": "a4944bdea50e383b42c2a810fccf8beefa1ef1a6"
+      "commit": "ca38580868aefc6b720a70613ab53e224833417f",
+      "tree": "7c92bc224bec37d800458f3956b2f0c4c22f5244"
     },
     {
       "plugin": "woia-organization-knowledge",
@@ -63,24 +63,24 @@
       "repository": "Turpial-AI-Academy/woia-sales-pipeline-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "c492a14acfb4e7121bbb402f5f10b427e873afae",
-      "tree": "607d267886480c88ac0dce8a496a54550388e253"
+      "commit": "e938839de2bbb85e1fbc9b55559ae64ddfdece62",
+      "tree": "c343b13ed658658f97c0daa4b1750b5de1a8a126"
     },
     {
       "plugin": "woia-re-domain-contracts",
       "repository": "Turpial-AI-Academy/woia-re-domain-contracts-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "33af7010ad2e9a71aca576c27914619a3f9d7f34",
-      "tree": "639afce801dbd61153cd919a23c1e4f5de4612e4"
+      "commit": "1b656bcf591e6c8055e9372426ecafca686f7899",
+      "tree": "b6734ef9e5e83b5073fb4820a2824a9023eb6581"
     },
     {
       "plugin": "woia-re-property-data",
       "repository": "Turpial-AI-Academy/woia-re-property-data-agent-plugin",
       "version": "0.5.7",
       "ref": "v0.5.7",
-      "commit": "9b6803e0546f2e2ce79152de74177c25767882d7",
-      "tree": "dba6a1141c0606e13c02e9e8ce91d9490fd7b2a1"
+      "commit": "632e94a692984177247eb57d02369bd14b7935dc",
+      "tree": "a7ec266d3b6603815aede8074617ef392ebbfd29"
     }
   ],
   "base_range": {

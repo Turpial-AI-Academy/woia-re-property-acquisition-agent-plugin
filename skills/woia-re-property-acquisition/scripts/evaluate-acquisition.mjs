@@ -1,4 +1,4 @@
-/** Pure ADR-0008 delta evaluation. Host resolves the trusted second argument.
+/** Pure acquisition delta evaluation. Host resolves the trusted second argument.
  * No persistence, dispatch, permission grant, qualification or Core lifecycle. */
 import { readFileSync } from 'node:fs';
 import { isDeepStrictEqual } from 'node:util';

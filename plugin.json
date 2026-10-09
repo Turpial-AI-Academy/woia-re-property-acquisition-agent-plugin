@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "woia-re-property-acquisition",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "Real Estate service-scoped delta over Supply Acquisition with source-backed authorization and receiver-owned transfer.",
   "author": {
     "name": "Turpial AI Academy",

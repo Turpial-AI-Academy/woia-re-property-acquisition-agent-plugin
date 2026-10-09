@@ -1,6 +1,6 @@
 {
   "schema": "dev.woia.department-orchestrator/v1",
-  "version": "0.5.0",
+  "version": "0.5.6",
   "authoring_profile": "thin",
   "kind": "department-orchestrator-delta",
   "department": "supply-acquisition",
@@ -8,10 +8,10 @@
   "requires_plugins": [
     {
       "name": "woia-core",
-      "minimum_version": "0.5.3"
+      "minimum_version": "0.5.6"
     },
     {
-      "minimum_version": "0.5.0",
+      "minimum_version": "0.5.6",
       "maximum_version_exclusive": "0.6.0",
       "name": "woia-supply-acquisition"
     }
@@ -19,18 +19,18 @@
   "core_release": {
     "plugin": "woia-core",
     "repository": "Turpial-AI-Academy/woia-core-agent-plugin",
-    "version": "0.5.3",
-    "ref": "v0.5.3",
-    "commit": "7a05b942bc244b385ea1403ed5dc975fdae22e24",
-    "tree": "f18ebe8268478aea7551713fafbbf90a3e54b0cc"
+    "version": "0.5.6",
+    "ref": "v0.5.6",
+    "commit": "c8d336380182d5dc33f447a5f7ab2c63f763f925",
+    "tree": "911de6cdae02de424724e1c70503350f7c6870c6"
   },
   "base_release": {
     "plugin": "woia-supply-acquisition",
     "repository": "Turpial-AI-Academy/woia-supply-acquisition-agent-plugin",
-    "version": "0.5.0",
-    "ref": "v0.5.0",
-    "commit": "cc887a54a956e481e844f466c9111a3a6209b32e",
-    "tree": "862901c621e0d1673c2941bf3cc39a778db465f3"
+    "version": "0.5.6",
+    "ref": "v0.5.6",
+    "commit": "7e222facc58ee8334366752f22d7b26985b63f39",
+    "tree": "5566e3a61a649f48580877191f4bf853c940d0ff"
   },
   "contracts_directory": "skills/woia-re-property-acquisition/references",
   "delta_contract": "skills/woia-re-property-acquisition/references/delta-contract.json",

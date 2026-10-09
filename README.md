@@ -1,6 +1,6 @@
-# WOIA RE Property Acquisition v0.5.0
+# WOIA RE Property Acquisition v0.5.6
 
-A thin department-orchestrator delta over published Supply Acquisition v0.5.0 and Core v0.5.3. It adds only ADR-0008's five Real Estate coordination rules for independent sale, rental-placement and existing-Lease administration scopes.
+A thin department-orchestrator delta over published Supply Acquisition v0.5.6 and Core v0.5.6. It adds only ADR-0008's five Real Estate coordination rules for independent sale, rental-placement and existing-Lease administration scopes.
 
 ## Contract and ownership
 
@@ -14,4 +14,4 @@ See [delta contract](skills/woia-re-property-acquisition/references/acquisition-
 
 ## Maintenance
 
-Use `mise run bootstrap`, `mise run doctor`, `mise run validate`, `mise run test`, `mise run ci:fast` and committed clean `mise run release:check`. Central Ecosystem v0.5.4 `plugin:certify-thin` validates the exact committed candidate. Maintenance evidence is described in the repository-only VALIDATION.md. Tests use synthetic public inputs; Operator E2E remains NOT_RUN and Production Ready=false.
+Use `mise run bootstrap`, `mise run doctor`, `mise run validate`, `mise run ci:fast` and committed clean `mise run release:check`. Central Ecosystem v0.5.6 `plugin:certify-thin` validates the exact committed candidate.

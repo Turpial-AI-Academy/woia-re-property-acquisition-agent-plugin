@@ -26,4 +26,4 @@ The pure [evaluate-acquisition.mjs](scripts/evaluate-acquisition.mjs) evaluates 
 
 ## REPORT
 
-Report the precise subject/service/action, accepted source refs, blockers, retained or accepted receiver owner and next Due Work review. Contribution completion is not parent completion; accepted transfer ends Acquisition ownership of that downstream scope. No pair qualification, Operator E2E or Production Ready claim is made by engineering evaluation. W5 admission/distribution remain later gates.
+Report the precise subject/service/action, accepted source refs, blockers, retained or accepted receiver owner and next Due Work review. Contribution completion is not parent completion; accepted transfer ends Acquisition ownership of that downstream scope. No pair qualification, Operator E2E or Production Ready claim is made by engineering evaluation. admission/distribution remain later gates.
